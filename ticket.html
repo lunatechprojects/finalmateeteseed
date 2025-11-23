@@ -21,10 +21,71 @@
         <link href="bootstrap-icons.css" rel="stylesheet">
 
         <link href="templatemo-festava-live.css" rel="stylesheet">
+<!--favixon--><link rel="icon" type="image/x-icon" href="./image.png">
+        <style>
+            slideshow-container {
+        width: 500px;
+        height: 320px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
 
+    .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Curtain Overlay */
+    .curtain {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 80px;
+        background: rgba(255,255,255,0.9);
+        color: black;
+        font-weight: bold;
+        padding: 15px;
+        box-sizing: border-box;
+        transform: translateY(100%);
+        transition: 0.5s ease;
+    }
+
+    /* When slide is active - show curtain */
+    .active .curtain {
+        transform: translateY(0%);
+    }
+
+    /* Next/Prev Buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        padding: 10px 15px;
+        color: #fff;
+        background: rgba(0,0,0,0.4);
+        border-radius: 3px;
+        font-size: 18px;
+        transform: translateY(-50%);
+        user-select: none;
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+        </style>
     </head>
     
     <body>
+
 
         <main>
 
@@ -47,10 +108,10 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        Festava Live
+                        MCSSS
                     </a>
 
-                    <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+                    <a href="index.html" class="btn custom-btn d-lg-none ms-auto me-4">Home</a>
     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -78,70 +139,89 @@
                             </li>
                         </ul>
 
-                        <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Join us</a>
+                        <a href="index.html" class="btn custom-btn d-lg-block d-none">Home</a>
                     </div>
                 </div>
             </nav>
+            <div class="slideshow-container">
 
+                <!-- Slide 1 -->
+                <div class="slide active">
+                    <img src="./cbs-1.jpg">
+                    <div class="curtain">Students of Mateete Comprehensive Seed Secondary School recently had the enriching opportunity to visit CBS Radio, an experience that broadened their understanding of media, communication, and the role of journalism in society. The visit provided learners with a unique platform to interact with media professionals and to actively participate in discussions on issues affecting young people and the community at large.
 
-            <section class="ticket-section section-padding">
-                <div class="section-overlay"></div>
-
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-10 mx-auto">
-                            <form class="custom-form ticket-form mb-5 mb-lg-0" action="#" method="post" role="form">
-                                <h2 class="text-center mb-4">Get started here</h2>
-
-                                <div class="ticket-form-body">
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="text" name="ticket-form-name" id="ticket-form-name" class="form-control" placeholder="Full name" required>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <input type="email" name="ticket-form-email" id="ticket-form-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
-                                        </div>
-                                    </div>
-
-                                    <input type="tel" class="form-control" name="ticket-form-phone" placeholder="+256 000 000 000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
-
-                                    <h6>Choose</h6>
-
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="form-check form-control">
-                                                <input class="form-check-input" type="radio" name="TicketForm" id="flexRadioDefault1">
-                                                <label class="form-check-label" for="flexRadioDefault1">
-                                                    Female
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-6 col-12">
-                                            <div class="form-check form-check-radio form-control">
-                                                <input class="form-check-input" type="radio" name="TicketForm" id="flexRadioDefault2">
-                                                <label class="form-check-label" for="flexRadioDefault2">
-                                                    Male
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <input type="number" name="ticket-form-number" id="ticket-form-number" class="form-control" placeholder="class" required>
-
-                                    <textarea name="ticket-form-message" rows="3" class="form-control" id="ticket-form-message" placeholder="Commebt"></textarea>
-
-                                    <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                                        <button type="submit" class="form-control">Submit</button>
-                                    </div>
-                                </div>
-                            </form>
-                    </div>
+                        During the session, students were welcomed into the broadcasting studios, where they observed firsthand how radio programs are produced, edited, and transmitted. They interacted with presenters, producers, and technical staff who explained the daily operations of the station and the importance of responsible communication.</div>
                 </div>
-            </section>
+            
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img src="./copter.jpg">
+                    <div class="curtain">A helicopter recently visited Mateete Comprehensive Seed Secondary School, creating a moment of great excitement and curiosity among students, staff, and the surrounding community. The aircraft’s arrival provided learners with a rare and memorable opportunity to observe a helicopter up close, learn about its features, and interact with the crew. For many students, it was their first time seeing a helicopter land, making the experience both educational and inspiring. The visit not only sparked interest in aviation and related careers but also strengthened the school’s spirit of exploration and learning, leaving a lasting impression on everyone present</div>
+                </div>
+            
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img src="./reard.jpg">
+                    <div class="curtain">During a teachers, teachers of Mateete Comprehensive Seed Secondary School played an active and influential role, contributing thoughtful ideas and engaging in productive discussions aimed at improving the academic and disciplinary standards of the school. Their dedication and commitment to guiding learners were further acknowledged when the school administration presented them with gifts as a token of appreciation for their hard work, resilience, and unwavering support throughout the term. This gesture not only motivated the teachers but also strengthened the sense of unity and teamwork within the school community, reinforcing the administration’s gratitude for the invaluable role teachers play in shaping the future of the learners.</div>
+                </div>
+            
+                <!-- Navigation -->
+                <div class="prev" onclick="plusSlides(-1)">❮</div>
+                <div class="next" onclick="plusSlides(1)">❯</div>
+            </div>
+        <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+
+
+
+
+        </pre>
+
+                       
         </main>
+        
 
 
         <footer class="site-footer">
@@ -248,7 +328,29 @@
                 </div>
             </div>
         </footer>
-
+        <script>
+            let slideIndex = 0;
+            showSlide(slideIndex);
+            
+            function plusSlides(n) {
+                showSlide(slideIndex += n);
+            }
+            
+            function showSlide(n) {
+                let slides = document.getElementsByClassName("slide");
+            
+                if (n >= slides.length) { slideIndex = 0; }
+                if (n < 0) { slideIndex = slides.length - 1; }
+            
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                    slides[i].classList.remove("active");
+                }
+            
+                slides[slideIndex].style.display = "block";
+                slides[slideIndex].classList.add("active");
+            }
+            </script>
 <!--
 
 T e m p l a t e M o
